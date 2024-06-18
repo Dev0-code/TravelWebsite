@@ -1,0 +1,70 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.background-video {
+    position: static;
+    top: 0;
+    left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1; 
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+.background-video video {
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.cd{
+    border-radius: 20px;
+}
+.c{
+    display: flex;
+    justify-content: center;
+    background: none;
+    z-index: 1;
+}
+/* ---------------------------tour------------------------- */
+.tour{
+    margin-top: -150px;
+}
+.carousel-item {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+  }
+.tourShadow:hover{
+    background-color: rgba(238, 238, 238, 0.473);
+    transform: scale(1.01);
+    transition:ease-in-out 0.5s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.404);
+}
+/* ---------------------------services----------------------- */
+.service{
+    padding-top: auto;
+    padding-bottom: auto;
+}
+.bg-registration {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./Image/london4.jpg), no-repeat center center;
+    background-size: cover;
+  }
+
+/* ---------------------------about----------------------- */
+
+@media screen and (max-width: 768px) {
+    .background-video {
+        padding-top: 75%; /* Adjust as needed */
+    }
+    /* tour */
+    .tour{
+        margin-top: -80px;
+    }
+}
+
